@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 65.5%;
+}
+
+body {
+  color: #000;
+  font: 300 1.6rem/1.7 "IranSans", sans-serif;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: #fff;
+  background: #05b562;
+}/*# sourceMappingURL=style.css.map */
