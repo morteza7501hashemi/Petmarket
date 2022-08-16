@@ -1,0 +1,55 @@
+.search {
+    width: 40rem;
+    height: 3.7rem;
+    display: flex;
+
+    @include respond(tab-land) {
+        width: 40rem;
+        height: 4.5rem;
+    }
+
+    @media only screen and (max-width: 50em) {
+        width: 95%;
+        margin: 0 auto;
+        order: 1;
+    }
+
+    &__input {
+        width: 90%;
+        color: $color-gray;
+        font: inherit;
+        font-size: 1.4rem;
+        background: $color-white;
+        padding: .4rem 1rem;
+        border: 1px solid $color-gray-light;
+        border-radius: 6px;
+        transition: all .2s;
+
+        &:focus {
+            border: 1px solid $color-primary;
+        }
+    }
+
+    &__icon-box {
+        width: 7rem;
+        background: $color-white;
+        border: 1px solid $color-gray-light;
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .2s;
+
+        &:hover {
+            border: 1px solid $color-primary;
+        }
+    }
+
+    &__icon {
+        width: 4rem;
+        height: 4rem;
+        background: url(../icon/search.svg) no-repeat;
+        transform: scale(.6);
+    }
+}
