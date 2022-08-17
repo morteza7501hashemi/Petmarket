@@ -31,6 +31,17 @@
         &:hover {
             color: $color-secondary;
         }
+
+        &:hover &--icon {
+            color: currentColor;
+        }
+ 
+        &--icon {
+            width: 2rem;
+            height: 2rem;
+            color: currentColor;
+            background: url(../icon/login.svg) no-repeat;
+        }
     }
 
     &__logo {
@@ -48,35 +59,33 @@
         @include respond(tab-port) {
             margin-right: auto;
         }
-    }
 
-    &__cart-icon {
-        width: 3rem;
-        height: 3rem;
-        background: url(../icon/cart.svg) no-repeat;
-        cursor: pointer;
-    }
+        &:hover &--icon {
+            fill: $color-secondary;
+        }
 
-    &__cart-count {
-        width: 2rem;
-        height: 2rem;
-        color: $color-white;
-        font-size: $default-font-size;
-        background: #f31c1c;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: -20%;
-        right: -20%;
-    }
-
-    &__login-icon {
-        width: 2rem;
-        height: 2rem;
-        color: currentColor;
-        background: url(../icon/login.svg) no-repeat;
+        &--icon {
+            width: 3rem;
+            height: 3rem;
+            background: url(../icon/cart.svg) no-repeat;
+            cursor: pointer;
+            transition: all .2s;
+        }
+    
+        &--count {
+            width: 2rem;
+            height: 2rem;
+            color: $color-white;
+            font-size: $default-font-size;
+            background: #f31c1c;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -20%;
+            right: -20%;
+        }
     }
 
     &__label {

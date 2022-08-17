@@ -1,0 +1,58 @@
+.header {
+    width: 100%;
+    height: 90vh;
+    direction: ltr;
+    text-align: right;
+    background: $color-gray-light-2;
+    padding: 3rem;
+    overflow-x: scroll;
+    scrollbar-width: 0;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @include respond(tab-port) {
+        display: none;
+    }
+
+    &__slide {
+        flex: 0 0 100%;
+        height: 100%;
+        border-radius: 50px;
+        scroll-snap-align: start;
+        animation: slider 25s 2s ease infinite;
+
+        &--1 {
+            text-align: center;
+            background: url(../img/slide-1.jpg) top/cover no-repeat;
+            
+            h1 {
+                transform: translateY(25%);
+            }
+        }
+
+        &--2 {
+            text-align: center;
+            background: url(../img/slide-2.jpg) top/cover no-repeat;
+
+            h2 {
+                color: $color-white;
+                transform: translateY(25%);
+            }
+        }
+
+        &--3 {
+            background: url(../img/slide-3.jpg) 50%/cover no-repeat;
+            
+            h2 {
+                transform: translate(-17%, 180%);
+            }
+        }
+    }
+}
