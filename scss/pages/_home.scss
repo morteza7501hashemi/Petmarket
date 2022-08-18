@@ -1,0 +1,21 @@
+.categories {
+    @include section;
+    padding: 5rem 0;
+
+    @include respond(tab-land) {
+        padding: 4rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 3rem 0;
+    }
+
+    &__container {
+        padding: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+

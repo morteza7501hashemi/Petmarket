@@ -1,0 +1,27 @@
+.category-box {
+    flex: 0 0 calc(25% - 2.25rem);
+    height: 17rem;
+    text-align: center;
+    background: $color-tertiary-light;
+    padding: 2rem;
+    border: 1px solid $color-gray-light;
+
+    @include respond(tab-land) {
+        flex: 0 0 calc(24% - 2.25rem);
+    }
+
+    @include respond(tab-port) {
+        flex: 0 0 33rem;
+    }
+
+    &:hover &__img {
+        transform: scale(1.1);
+    }
+    
+    &__img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all .3s;
+    }
+}

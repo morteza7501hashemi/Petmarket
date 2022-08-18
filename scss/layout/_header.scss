@@ -17,8 +17,9 @@
         display: none;
     }
 
-    @include respond(tab-port) {
-        display: none;
+    @include respond(phone) {
+        padding: 1rem;
+        scroll-padding: 1rem;
     }
 
     &__slide {
@@ -30,9 +31,13 @@
 
         &--1 {
             text-align: center;
-            background: url(../img/slide-1.jpg) top/cover no-repeat;
+            background: linear-gradient(to right bottom,
+                rgba($color-gray,0.1),
+                rgba($color-gray,0.1)),
+            url(../img/slide-1.jpg) top/cover no-repeat;
             
-            h1 {
+            h2 {
+                color: $color-white;
                 transform: translateY(25%);
             }
         }
@@ -41,17 +46,21 @@
             text-align: center;
             background: url(../img/slide-2.jpg) top/cover no-repeat;
 
-            h2 {
-                color: $color-white;
+            h1 {
                 transform: translateY(25%);
+                margin: 0 2rem;
             }
         }
 
         &--3 {
-            background: url(../img/slide-3.jpg) 50%/cover no-repeat;
+            background: linear-gradient(to right bottom,
+                rgba($color-black,0.2),
+                rgba($color-black,0.2)),
+            url(../img/slide-3.jpg) 50%/cover no-repeat;
             
             h2 {
-                transform: translate(-17%, 180%);
+                color: $color-white;
+                margin: 23rem 5rem 0 0;
             }
         }
     }

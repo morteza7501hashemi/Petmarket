@@ -11,7 +11,7 @@
 }
 
 html {
-    font-size: 65.5%;    // 1rem = 10px
+    font-size: 62.5%;    // 1rem = 10px
 
     @include respond(tab-land) {
         font-size: 56.25%;    // 1rem = 9px
@@ -29,8 +29,6 @@ html {
 }
 
 body {
-    max-width: 1800px;
-    margin: 0 auto;
     color: $color-black;
     font: $font;
     background: $color-white;
