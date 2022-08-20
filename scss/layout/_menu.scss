@@ -18,6 +18,13 @@
         width: 27rem;
     }
 
+    &__heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
     &__logo {
         height: 4rem;
     }
@@ -30,7 +37,7 @@
 
     &__item {
         &:not(:last-of-type) {
-            border-bottom: 1px solid #d2d2d299;
+            border-bottom: 1px solid $color-gray-dark;
         }
     }
 

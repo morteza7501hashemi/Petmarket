@@ -38,16 +38,20 @@
         ورود / ثبت نام
     </a>
 
-    <input class="nav__checkbox" type="checkbox" id="checkbox">
-    <label class="nav__label" for="checkbox">
-        <span class="nav__menu-btn"></span>
+    <input class="hamburger-menu" type="checkbox" id="hamburger-menu">
+    <label class="hamburger-menu__btn" for="hamburger-menu">
+        <span class="hamburger-menu__line"></span>
     </label>
+
 
     <div class="menu">
 
-        <a class="menu__link" href="index.html">
+        <div class="menu__heading">
             <img class="menu__logo" src="./img/logo.jpg" alt="Logo">
-        </a>
+            <label class="hamburger-menu__btn" for="hamburger-menu">
+                <span class="hamburger-menu__line"></span>
+            </label>
+        </div>
 
         <ul class="menu__list">
             <li class="menu__item">
@@ -57,15 +61,15 @@
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="##">
+                <a class="menu__link" href="#categories">
                     <i class="menu__icon menu__icon--category"></i>
                     دسته بندی ها
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="##">
+                <a class="menu__link" href="#ads">
                     <i class="menu__icon menu__icon--pets"></i>
-                    آخرین آگهی ها
+                    جدید‌ترین آگهی ها
                 </a>
             </li>
 
@@ -109,7 +113,7 @@
 
 <main>
 
-    <section class="categories"> 
+    <section class="categories" id="categories"> 
         
         <h3 class="heading-tertiary">دسته بندی ها</h3>
 
@@ -135,8 +139,115 @@
 
     </section>
 
-    
+    <section class="ads" id="ads">
 
+        <h3 class="heading-tertiary">جدیدترین آگهی ها</h3>
+
+        <div class="ads__container">
+
+            <div class="ad-box">
+                <figure class="ad-box__img-box">
+                    <a href="##"><img class="ad-box__img" src="img/pet-1.jpg" alt="Pet" loading="lazy"></a>
+                </figure>
+                <a class="heading-quaternary ad-box__heading" href="##">شهد خورک رنگین کمانی</a>
+                <div class="ad-box__detail">
+                    <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                </div>
+                <div class="ad-box__link-box">
+                   <a class="ad-box__link" href="##">
+                    مشاهده اطلاعات
+                    <i class="ad-box__icon"></i>
+                    </a> 
+                </div>
+            </div>
+            
+            <div class="ad-box">
+                <figure class="ad-box__img-box">
+                    <a href="##"><img class="ad-box__img" src="img/pet-2.jpg" alt="Pet" loading="lazy"></a>
+                </figure>
+                <a class="heading-quaternary ad-box__heading" href="##">اسکاتیش فولد</a>
+                <div class="ad-box__detail">
+                    <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                </div>
+                <div class="ad-box__link-box">
+                   <a class="ad-box__link" href="##">
+                    مشاهده اطلاعات
+                    <i class="ad-box__icon"></i>
+                    </a> 
+                </div>
+            </div>
+
+            <div class="ad-box">
+                <figure class="ad-box__img-box">
+                    <a href="##"><img class="ad-box__img" src="img/pet-3.jpg" alt="Pet" loading="lazy"></a>
+                </figure>
+                <a class="heading-quaternary ad-box__heading" href="##">باکسر</a>
+                <div class="ad-box__detail">
+                    <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                </div>
+                <div class="ad-box__link-box">
+                   <a class="ad-box__link" href="##">
+                    مشاهده اطلاعات
+                    <i class="ad-box__icon"></i>
+                    </a> 
+                </div>
+            </div>
+
+            <div class="ad-box">
+                <figure class="ad-box__img-box">
+                    <a href="##"><img class="ad-box__img" src="img/pet-4.jpg" alt="Pet" loading="lazy"></a>
+                </figure>
+                <a class="heading-quaternary ad-box__heading" href="##">گلدن رتریور</a>
+                <div class="ad-box__detail">
+                    <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                </div>
+                <div class="ad-box__link-box">
+                   <a class="ad-box__link" href="##">
+                    مشاهده اطلاعات
+                    <i class="ad-box__icon"></i>
+                    </a> 
+                </div>
+            </div>
+
+            <div class="ad-box">
+                <figure class="ad-box__img-box">
+                    <a href="##"><img class="ad-box__img" src="img/pet-5.jpg" alt="Pet" loading="lazy"></a>
+                </figure>
+                <a class="heading-quaternary ad-box__heading" href="##">بیرمن</a>
+                <div class="ad-box__detail">
+                    <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                </div>
+                <div class="ad-box__link-box">
+                   <a class="ad-box__link" href="##">
+                    مشاهده اطلاعات
+                    <i class="ad-box__icon"></i>
+                    </a> 
+                </div>
+            </div>
+
+            <div class="ad-box">
+                <figure class="ad-box__img-box">
+                    <a href="##"><img class="ad-box__img" src="img/pet-6.jpg" alt="Pet" loading="lazy"></a>
+                </figure>
+                <a class="heading-quaternary ad-box__heading" href="##">دلقک ماهی</a>
+                <div class="ad-box__detail">
+                    <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                </div>
+                <div class="ad-box__link-box">
+                   <a class="ad-box__link" href="##">
+                    مشاهده اطلاعات
+                    <i class="ad-box__icon"></i>
+                    </a> 
+                </div>
+            </div>
+
+        </div>
+
+        <a class="btn" href="##">مشاهده تمام آگهی ها</a>
+
+    </section>
+
+    
 </main>
 
 </body>

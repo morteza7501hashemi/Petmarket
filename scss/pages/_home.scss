@@ -1,6 +1,6 @@
 .categories {
     @include section;
-    padding: 5rem 0;
+    padding: 5rem 0 2.5rem;
 
     @include respond(tab-land) {
         padding: 4rem 0;
@@ -12,6 +12,7 @@
 
     &__container {
         padding: 3rem;
+        padding-bottom: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -19,3 +20,20 @@
     }
 }
 
+.ads {
+    @include section;
+    text-align: center;
+    padding: 2.5rem 0;
+
+    &__container {
+        padding: 9rem 3rem 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 9rem 3rem;
+
+        @include respond(tab-port) {
+            gap: 9rem 4rem;
+        }
+    }
+}

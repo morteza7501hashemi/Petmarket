@@ -1,19 +1,22 @@
-// .btn {
-//     font: inherit;
-//     font-size: $default-font-size;
-//     cursor: pointer;
-//     transition: all .2s;
+.btn {
+    color: $color-primary;
+    font: inherit;
+    font-size: $default-font-size;
+    text-align: center;
+    background: #c2fbd7;
+    padding: .7rem 2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    box-shadow: 0 .8rem 1.6rem #2cbb6326;
+    display: inline-block;
+    transition: box-shadow .4s;
 
-//     &-nav {
-//         color: $color-gray;
-//         background: $color-white;
-//         padding: .5rem .75rem;
-//         border: 1px solid $color-gray-light;
-//         border-radius: 10rem;
-
-//         &:hover {
-//             color: $color-white;
-//             background: $color-secondary;
-//         }
-//     }
-// }
+    &:hover {
+        box-shadow:  0 -2.5rem 1.8rem -1.4rem #2cbb6359,
+            0 .1rem .2rem #2cbb6340,
+            0 .2rem .4rem #2cbb6340,
+            0 .4rem .8rem #2cbb6340,
+            0 .8rem 1.6rem #2cbb6340,
+            0 1.6rem 3.2rem #2cbb6340;
+    }
+}
