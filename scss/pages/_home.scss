@@ -82,5 +82,74 @@
             flex: 0 0 70%;
         }
     }
-
 }
+
+.reviews {
+    @include section;
+    padding: 2.5rem 0;
+
+    &__container {
+        padding: 3rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    &__box {
+        flex: 0 0 38%;
+        background: $color-white;
+        padding: 3rem;
+        border-radius: 2rem;
+
+        @include respond(tab-port) {
+            flex: 0 0 66rem;
+        }
+
+        @include respond(phone) {
+            flex: 0 0 36rem;
+        }
+
+        &--header {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        &--photo {
+            width: 6rem;
+            height: 6rem;
+            border: 5px;
+        }
+    
+        &--icon-box {
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+        }
+    
+        &--icon {
+            width: 2rem;
+            height: 2rem;
+            background: url(../../icon/star.svg) no-repeat;
+        }
+    
+        &--review {
+            height: 14rem;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                display: thin;
+            }
+        }
+
+        &--txt {
+            color: $color-gray;
+            font-size: 1.7rem;
+            line-height: 2;
+            margin-left: 1rem;
+        }
+    }
+}
+
