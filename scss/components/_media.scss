@@ -24,21 +24,22 @@
         width: 3.5rem;
         height: 3.5rem;
         transform: translateY(1.5rem);
+        transition: fill .2s;
 
         &--phone {
-            background: url(../icon/phone.svg) no-repeat;
+            fill: $color-secondary;
         }
 
         &--whatsapp {
-            background: url(../icon/whatsapp.svg) no-repeat;
+            fill: #25d366;
         }
 
         &--telegram {
-            background: url(../icon/telegram.svg) no-repeat;
+            fill: #229ed9;
         }
 
         &--instagram {
-            background: url(../icon/instagram.svg) no-repeat;
+            fill: #c13584;
         }
     }
 

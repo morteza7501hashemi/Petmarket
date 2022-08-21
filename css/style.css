@@ -216,7 +216,6 @@ body {
   width: 2rem;
   height: 2rem;
   fill: currentColor;
-  background: url(../icon/arrow-left.svg) no-repeat;
 }
 
 .btn {
@@ -378,18 +377,19 @@ body {
   width: 3.5rem;
   height: 3.5rem;
   transform: translateY(1.5rem);
+  transition: fill 0.2s;
 }
 .media__icon--phone {
-  background: url(../icon/phone.svg) no-repeat;
+  fill: #ff7800;
 }
 .media__icon--whatsapp {
-  background: url(../icon/whatsapp.svg) no-repeat;
+  fill: #25d366;
 }
 .media__icon--telegram {
-  background: url(../icon/telegram.svg) no-repeat;
+  fill: #229ed9;
 }
 .media__icon--instagram {
-  background: url(../icon/instagram.svg) no-repeat;
+  fill: #c13584;
 }
 .media__icon-box:hover .media__icon {
   fill: #05b562;
@@ -442,10 +442,9 @@ body {
   border: 1px solid #05b562;
 }
 .search__icon {
-  width: 4rem;
-  height: 4rem;
-  background: url(../icon/search.svg) no-repeat;
-  transform: scale(0.6);
+  width: 2.25rem;
+  height: 2.25rem;
+  fill: #05b562;
 }
 
 .footer {
@@ -640,30 +639,10 @@ body {
 .menu__link:hover {
   color: #ff7800;
 }
-.menu__link:first-of-type {
-  align-self: center;
-}
 .menu__icon {
   width: 1.75rem;
   height: 1.75rem;
-}
-.menu__icon--home {
-  background: url(../icon/home.svg) no-repeat;
-}
-.menu__icon--category {
-  background: url(../icon/category.svg) no-repeat;
-}
-.menu__icon--pets {
-  background: url(../icon/pets.svg) no-repeat;
-}
-.menu__icon--add {
-  background: url(../icon/add.svg) no-repeat;
-}
-.menu__icon--reviews {
-  background: url(../icon/reviews.svg) no-repeat;
-}
-.menu__icon--consultation {
-  background: url(../icon/consultation.svg) no-repeat;
+  fill: #ff7800;
 }
 
 .nav {
@@ -703,14 +682,10 @@ body {
 .nav__link:hover {
   color: #ff7800;
 }
-.nav__link:hover .nav__link--icon {
-  color: currentColor;
-}
 .nav__link--icon {
   width: 2rem;
   height: 2rem;
-  color: currentColor;
-  background: url(../icon/login.svg) no-repeat;
+  fill: currentColor;
 }
 .nav__logo {
   height: 4rem;
@@ -733,7 +708,7 @@ body {
 .nav__cart--icon {
   width: 3rem;
   height: 3rem;
-  background: url(../icon/cart.svg) no-repeat;
+  fill: #606060;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -900,7 +875,7 @@ body {
 .reviews__box--icon {
   width: 2rem;
   height: 2rem;
-  background: url(../../icon/star.svg) no-repeat;
+  fill: #eecf31;
 }
 .reviews__box--review {
   height: 14rem;

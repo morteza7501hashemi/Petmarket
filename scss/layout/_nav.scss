@@ -33,15 +33,10 @@
             color: $color-secondary;
         }
 
-        &:hover &--icon {
-            color: currentColor;
-        }
- 
         &--icon {
             width: 2rem;
             height: 2rem;
-            color: currentColor;
-            background: url(../icon/login.svg) no-repeat;
+            fill: currentColor;
         }
     }
 
@@ -68,7 +63,7 @@
         &--icon {
             width: 3rem;
             height: 3rem;
-            background: url(../icon/cart.svg) no-repeat;
+            fill: $color-gray;
             cursor: pointer;
             transition: all .2s;
         }

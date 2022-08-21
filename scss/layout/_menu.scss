@@ -55,38 +55,11 @@
         &:hover {
             color: $color-secondary;
         }
-
-        &:first-of-type {
-            align-self: center;
-        }
     }
 
     &__icon {
         width: 1.75rem;
         height: 1.75rem;
-
-        &--home {
-            background: url(../icon/home.svg) no-repeat;
-        }
-
-        &--category {
-            background: url(../icon/category.svg) no-repeat;
-        }
-
-        &--pets {
-            background: url(../icon/pets.svg) no-repeat;
-        }
-
-        &--add {
-            background: url(../icon/add.svg) no-repeat;
-        }
-
-        &--reviews {
-            background: url(../icon/reviews.svg) no-repeat;
-        }
-
-        &--consultation {
-            background: url(../icon/consultation.svg) no-repeat;
-        }
+        fill: $color-secondary
     }
 }
