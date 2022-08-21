@@ -448,6 +448,91 @@ body {
   transform: scale(0.6);
 }
 
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+.footer__container {
+  padding: 0 7rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem 25rem;
+}
+@media only screen and (max-width: 75em) {
+  .footer__container {
+    gap: 5rem 15rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .footer__container {
+    justify-content: center;
+  }
+}
+.footer__aboutUs {
+  flex: 0 0 30%;
+}
+@media only screen and (max-width: 75em) {
+  .footer__aboutUs {
+    flex: 0 0 37rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .footer__aboutUs {
+    flex: 0 0 47rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__aboutUs {
+    flex: 0 0 38rem;
+  }
+}
+.footer__aboutUs h4 {
+  margin-bottom: 1rem;
+}
+.footer__sections {
+  flex: 0 0 auto;
+  text-align: right;
+}
+.footer__sections h4 {
+  margin: 0 -2rem 1rem 0;
+}
+.footer__list {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 5rem;
+}
+.footer__item {
+  list-style: disc;
+}
+.footer__item::marker {
+  color: #ff7800;
+}
+.footer__link {
+  color: #606060;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+.footer__link:hover {
+  color: #05b562;
+}
+.footer__nav {
+  text-align: center;
+  background: #fff;
+  padding: 2rem 3rem;
+}
+.footer__nav--link {
+  color: #606060;
+  font-size: 1.6rem;
+  transition: color 0.2s;
+}
+.footer__nav--link:hover {
+  color: #05b562;
+}
+
 .header {
   width: 100%;
   height: 90vh;
