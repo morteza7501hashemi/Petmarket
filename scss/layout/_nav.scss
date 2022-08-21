@@ -90,11 +90,9 @@
     }
 
     .hamburger-menu {
-        &__btn {
+        &__btn-1 {
             @media only screen and (max-width: 24em) {
-                &:first-child {
-                    margin-right: auto;
-                }
+                margin-right: auto;
             }
         }
 

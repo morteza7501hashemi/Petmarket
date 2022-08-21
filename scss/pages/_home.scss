@@ -138,10 +138,6 @@
         &--review {
             height: 14rem;
             overflow-y: auto;
-
-            &::-webkit-scrollbar {
-                display: thin;
-            }
         }
 
         &--txt {
@@ -149,6 +145,22 @@
             font-size: 1.7rem;
             line-height: 2;
             margin-left: 1rem;
+        }
+    }
+}
+
+.consultation {
+    @include section;
+    padding: 3rem 0;
+
+    &__container {
+        padding: 4rem 0 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+
+        @include respond(tab-port) {
+            justify-content: center;
         }
     }
 }

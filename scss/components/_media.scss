@@ -1,0 +1,48 @@
+.media {
+    flex: 0 0 auto;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__icon-box {
+        display: grid;
+        grid-template-columns: min-content max-content;
+        align-items: center;
+        gap: 0 3rem;
+
+        &:hover h4 {
+            color: $color-primary;
+        }
+
+        .paragraph {
+            grid-column: 2 / 3;
+        }
+    }
+
+    &__icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        transform: translateY(1.5rem);
+
+        &--phone {
+            background: url(../icon/phone.svg) no-repeat;
+        }
+
+        &--whatsapp {
+            background: url(../icon/whatsapp.svg) no-repeat;
+        }
+
+        &--telegram {
+            background: url(../icon/telegram.svg) no-repeat;
+        }
+
+        &--instagram {
+            background: url(../icon/instagram.svg) no-repeat;
+        }
+    }
+
+    &__icon-box:hover &__icon {
+        fill: $color-primary;
+    }
+}
