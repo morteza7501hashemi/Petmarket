@@ -1,5 +1,5 @@
 .ad-box {
-    flex: 0 0 30%;
+    flex: 0 0 29%;
     text-align: center;
     background: $color-white;
     border-radius: 5px;
@@ -17,10 +17,6 @@
         flex: 0 0 37rem;
     }
 
-    &:hover &__img {
-        transform: scale(1);
-    }
-
     &__img-box {
         width: calc(100% - 3rem);
         height: 16rem;
@@ -35,6 +31,10 @@
         height: 100%;
         transform: scale(1.1);
         transition: all .4s;
+
+        &:hover {
+            transform: scale(1);
+        }
     }
 
     &__heading {
