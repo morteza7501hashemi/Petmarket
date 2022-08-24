@@ -1,3 +1,18 @@
+body {
+    color: $color-black;
+    font: $font;
+    background: $color-gray-light-2;
+}
+
+@font-face {
+    font-family: "IranSans";
+    src: url("../font/Regular.eot");
+    src: url("../font/Regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/Regular.woff2") format("woff2"),
+    url("../font/Regular.woff") format("woff"),
+    url("../font/Regular.ttf") format("truetype");
+ }
+
 .heading-primary {
     color: $color-secondary;
     font-size: 3.5rem;

@@ -60,11 +60,7 @@ html {
 }
 
 body {
-  color: #000;
-  font: 300 1.6rem/1.7 "IranSans", sans-serif;
-  background: #f3f4f6;
   box-sizing: border-box;
-  position: relative;
 }
 
 ::selection {
@@ -72,6 +68,17 @@ body {
   background: #05b562;
 }
 
+body {
+  color: #000;
+  font: 300 1.6rem/1.7 "IranSans", sans-serif;
+  background: #f3f4f6;
+}
+
+@font-face {
+  font-family: "IranSans";
+  src: url("../font/Regular.eot");
+  src: url("../font/Regular.eot?#iefix") format("embedded-opentype"), url("../font/Regular.woff2") format("woff2"), url("../font/Regular.woff") format("woff"), url("../font/Regular.ttf") format("truetype");
+}
 .heading-primary {
   color: #ff7800;
   font-size: 3.5rem;
